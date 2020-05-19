@@ -45,7 +45,7 @@ module SpreadsheetRails
     class_attribute :default_format
     self.default_format = :pdf
 
-    def self.call(template)
+    def self.call(template, source)
       "#{template.source.strip}"
     end
   end
